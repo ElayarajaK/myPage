@@ -1,0 +1,16 @@
+  /*  internal style adding**/
+  p{
+    background-color: blue;
+    width: 40%;
+    border-radius: 10px;
+    padding: 3%;
+    margin: 3%;
+}
+
+div{
+    width: 40%;
+    padding:2% ;
+    margin: 2%; 
+    border:3px solid yellow ; 
+    border-radius: 10px;
+}
