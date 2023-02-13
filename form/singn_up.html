@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <style>
+        div{
+            margin: 1%;
+            padding: 1%;
+        }
+        sub{
+            top: 20;
+           position: absolute;
+        }
+    </style>
+    <body>
+        
+        <form style="border:3px solid red ;">
+            <h1> Singn up</h1>
+            <div>
+                <label for="name"> Name : </label>
+                <input type="text" placeholder="Enetr your name" id="name" name="f_name" required /> <sub>*</sub>
+            </div>
+
+            <div>
+                <label for="name"> Email : </label>
+                <input type="email" placeholder="Enetr your E-mail" id="name" name="f_name" required/><sub>*</sub>
+            </div>
+
+            <div>
+                <label>Password :</label>
+                <input type="password" placeholder="Enter your password" name="pass"/>
+            </div>
+
+            
+
+            <div>
+                <div>
+
+                    <fieldset style="width: 40%;">
+                        <legend>Select your courses</legend>
+                   
+                    <label for="python">python </label>
+                    <input type="checkbox" name="courses" id="python" value="python"/> 
+                    &nbsp;&nbsp;
+                    <label for="java">pjavaython </label>
+                    <input type="checkbox" name="courses" id="java" value="java"/> 
+                    &nbsp;&nbsp;
+                    <label for="sql">sql </label>
+                    <input type="checkbox" name="courses" id="sql" value="sql"/> 
+                    &nbsp;&nbsp;
+
+                    <label for="ASP.NET">NET </label>
+                    <input type="checkbox" name="courses" id="ASP.NET" value="NET"/> 
+
+                    &nbsp;&nbsp;
+                    <label for="Angular">Angular </label>
+                    <input type="checkbox" name="courses" id="Angular" value="Angular"/> 
+                    &nbsp;&nbsp;
+                    <label for="React">React </label>
+                    <input type="checkbox" name="courses" id="React" value="Angular"/> 
+
+                </fieldset>
+                </div>
+            </div>
+
+
+            <div>
+                <fieldset  style="width: 40%;">
+                    <legend> Select the gender</legend>
+                &nbsp;&nbsp;
+                <label for="male">male </label>
+                <input type="radio" name="gender" id="male" value="python"/> 
+                &nbsp;&nbsp;
+           
+                <label for="fmale">female </label>
+                <input type="radio" name="gender" id="fmale" value="python"/> 
+                &nbsp;&nbsp;
+            
+                <label for="others">others </label>
+                <input type="radio" name="gender" id="others" value="python"/> 
+            </fieldset>
+            </div>
+
+
+            <div>
+
+                 <label for="dob">D.O.B : </label>
+                <input type="date" id="dob" min="2000-01-01" max="2030-01-01" value="2023-01-13" />  
+
+                <input type="time" value="12:00" min="9:00" max="18:00"/>
+            </div>
+            
+            <input type="submit"/>
+
+        </form>
+
+    </body>
+</html>
