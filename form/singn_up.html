@@ -1,99 +1,202 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-    </head>
-    <style>
-        div{
-            margin: 1%;
-            padding: 1%;
-        }
-        sub{
-            top: 20;
-           position: absolute;
-        }
-    </style>
-    <body>
+<head>
+
+</head>
+<style>
+    div {
+        margin: 1%;
+        padding: 1%;
+    }
+
+    sub {
+        top: 20;
+        position: absolute;
+    }
+</style>
+
+<body style="background-color:rgb(66, 135, 245,0.5)">
+
+    <!--
+            html5 
+
+            <input type="email"/>
+            type=date
+            type=time
+            type=number 
+            type=color
+            type=hidden
+
+        -->
+
+    <form style="border:3px solid red ; width: 50%; margin: 2%; padding: 2%;">
+        <h1> Registration form</h1>
+        <div>
+            <label for="name"> Name : </label>
+            <input type="text" placeholder="Enetr your name" id="name" name="f_name" required /> <sub>*</sub>
         
-        <form style="border:3px solid red ;">
-            <h1> Singn up</h1>
-            <div>
-                <label for="name"> Name : </label>
-                <input type="text" placeholder="Enetr your name" id="name" name="f_name" required /> <sub>*</sub>
-            </div>
-
-            <div>
-                <label for="name"> Email : </label>
-                <input type="email" placeholder="Enetr your E-mail" id="name" name="f_name" required/><sub>*</sub>
-            </div>
-
-            <div>
-                <label>Password :</label>
-                <input type="password" placeholder="Enter your password" name="pass"/>
-            </div>
-
             
+            <input type="hidden"  id="sname" name="s_name" value="java" />
+        
+            
+        
+        </div>
 
+        
+
+        <div>
+            <label for="name"> Email : </label>
+            <input type="email" placeholder="Enetr your E-mail" id="name" name="f_name" required /><sub>*</sub>
+        </div>
+
+        <div>
+            <label>Password :</label>
+            <input type="password" placeholder="Enter your password" name="pass" />
+        </div>
+
+
+
+        <div>
             <div>
-                <div>
 
-                    <fieldset style="width: 40%;">
-                        <legend>Select your courses</legend>
-                   
+                <fieldset style="width: 40%;">
+                    <legend>Select your courses</legend>
+
                     <label for="python">python </label>
-                    <input type="checkbox" name="courses" id="python" value="python"/> 
+                    <input type="checkbox" name="courses" id="python" value="python" />
                     &nbsp;&nbsp;
                     <label for="java">pjavaython </label>
-                    <input type="checkbox" name="courses" id="java" value="java"/> 
+                    <input type="checkbox" name="courses" id="java" value="java" />
                     &nbsp;&nbsp;
                     <label for="sql">sql </label>
-                    <input type="checkbox" name="courses" id="sql" value="sql"/> 
+                    <input type="checkbox" name="courses" id="sql" value="sql" />
                     &nbsp;&nbsp;
 
                     <label for="ASP.NET">NET </label>
-                    <input type="checkbox" name="courses" id="ASP.NET" value="NET"/> 
+                    <input type="checkbox" name="courses" id="ASP.NET" value="NET" />
 
                     &nbsp;&nbsp;
                     <label for="Angular">Angular </label>
-                    <input type="checkbox" name="courses" id="Angular" value="Angular"/> 
+                    <input type="checkbox" name="courses" id="Angular" value="Angular" />
                     &nbsp;&nbsp;
                     <label for="React">React </label>
-                    <input type="checkbox" name="courses" id="React" value="Angular"/> 
+                    <input type="checkbox" name="courses" id="React" value="Angular" />
 
                 </fieldset>
-                </div>
             </div>
+        </div>
 
 
-            <div>
-                <fieldset  style="width: 40%;">
-                    <legend> Select the gender</legend>
+        <div>
+            <fieldset style="width: 40%;">
+                <legend> Select the gender</legend>
                 &nbsp;&nbsp;
                 <label for="male">male </label>
-                <input type="radio" name="gender" id="male" value="python"/> 
+                <input type="radio" name="gender" id="male" value="python" />
                 &nbsp;&nbsp;
-           
+
                 <label for="fmale">female </label>
-                <input type="radio" name="gender" id="fmale" value="python"/> 
+                <input type="radio" name="gender" id="fmale" value="python" />
                 &nbsp;&nbsp;
-            
+
                 <label for="others">others </label>
-                <input type="radio" name="gender" id="others" value="python"/> 
+                <input type="radio" name="gender" id="others" value="python" />
             </fieldset>
-            </div>
+        </div>
 
 
-            <div>
+        <div>
 
-                 <label for="dob">D.O.B : </label>
-                <input type="date" id="dob" min="2000-01-01" max="2030-01-01" value="2023-01-13" />  
+            <label for="dob">D.O.B : </label>
+            <input type="date" id="dob" min="2000-01-01" max="2030-01-01" value="2023-01-13" />
 
-                <input type="time" value="12:00" min="9:00" max="18:00"/>
-            </div>
-            
-            <input type="submit"/>
+            <input type="time" value="12:00" min="9:00" max="18:00" />
+        </div>
 
-        </form>
+        <div>
+            <fieldset>
+                <legend>Address</legend>
 
-    </body>
+                <div>
+                    <label>Street No : </label>
+                    <input type="number" placeholder="street number" max="100" min="5" name="s_number" />
+                </div>
+                <div>
+                    <label>Street name : </label>
+                    <input type="text" placeholder="Name of the street" name="s_name" />
+                </div>
+
+                <div>
+                    <label>Select your city</label>
+                    <input list="city_list"/>
+                    <datalist id="city_list">
+                        <option value="vellore">Vellore</option>
+                        <option value="chennai">chennai</option>
+                        <option value="coimbathur">coimbathur</option>
+                        <option value="thruchi">thruchi</option>
+                        <option value="madura">madura</option>
+                        <option value="Krishnamgiri">Krishnamgiri</option>
+
+                    </datalist>
+
+
+
+
+                   <label>State  : </label>
+                    <select>
+                        <option value="TamilNadu">TamilNadu</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Maharatira">Maharatira</option>
+                        <option value="AP">AP</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Kashmir">Kashmir</option>
+
+                    </select>
+
+                    <div>
+                    <label>pincode :</label>
+                        <input type="number" placeholder="Eneter the 6 digit number" max="999999" min="100000"/>
+                    </div>
+
+
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Contact Details</legend>
+
+                        <div>
+                            <label>Mobile number</label>
+
+                            <input type="number" style="width:50px" value="+91" placeholder="+91" disabled>
+                            <input type="number" max="9999999999" min="1000000000" placeholder="Enter 10 digit number"/>
+                        </div>
+                    </fieldset>
+
+                </div>
+
+            </fieldset>
+
+
+          <!--  <input type="color"/> -->
+
+        </div>
+
+        <textarea  style="width: 400px;" cols="10" rows="5" minlength="100" maxlength="500"  placeholder="length should not excid 500">
+
+        </textarea>
+
+        <input type="file" accept=".pdf,.docx,.jpeg" multiple />
+
+          <input type="reset" value="Reset"/> <input type="submit" />
+
+          <label>Level Skill</label>
+
+          <input type="range" id="skill level" name="myskill" min="1" step="3" max="10" value="3" />
+
+    </form>
+
+</body>
+
 </html>
